@@ -21,7 +21,7 @@ TC- O(n) SC- O(1)
 #include <bits/stdc++.h> 
 int largestElement(vector<int>&arr, int n) {
     // Write your code here.
-    sort(arr,arr+n);
+    sort(arr.begin(),arr.end());
     cout<<arr[n-1];
 }
 
