@@ -39,7 +39,19 @@ prevCoursej != nextCoursej
 All the pairs [prevCoursej, nextCoursej] are unique.
 time.length == n
 1 <= time[i] <= 104
-The given graph is a directed acyclic graph.*/
+The given graph is a directed acyclic graph.
+
+INTUITION 
+# we can pick those courses first which have no dependencies/prerequisites
+# any courses are started only when all its prerequisites are done
+
+"IT REMINDS US OF TOPOLOGICAL SORT"
+
+Steps of topoplogical sort
+
+1. find indegree
+2. put elements in queue having indegree == 0
+3. queue traversal */
 
 
 class Solution {
